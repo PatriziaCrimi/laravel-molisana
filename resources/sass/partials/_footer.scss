@@ -1,2 +1,79 @@
 footer {
+  background-color: $primary_bg_color;
+  padding-top: $padding_unit * 2;
+
+  #footer-top {
+    padding-bottom: $padding_unit * 2;
+
+    a.logo {
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-bottom: $margin_unit * 2;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .footer-links-box {
+      padding-bottom: $padding_unit / 2 0;
+      text-align: center;
+
+      ul {
+        padding-top: $padding_unit / 2;
+
+        li {
+          font-family: $secondary_font;
+          font-size: $font_size - 6;
+          font-weight: $font_weight;
+
+          a {
+            display: block;
+            color: $secondary_color;
+            line-height: $line_height;
+            padding-bottom: $padding_unit / 2;
+          }
+        }
+      }
+
+      ul.contacts-info {
+        padding-top: 0;
+
+        li {
+          text-transform: uppercase;
+          font-size: $font_size / 2;
+          color: $secondary_color;
+          padding-bottom: $padding_unit / 2.5;
+
+          span {
+            font-weight: $font_weight * 2;
+          }
+        }
+      }
+    }
+  }
+
+  #footer-bottom {
+    width: 100%;
+
+    img {
+      max-width: 100%;
+      object-fit: scale-down;
+      object-position: center;
+    }
+  }
+}
+
+/* Breakpoint Medium 768px md */
+@media screen and (min-width: 768px) {
+  footer {
+    #footer-top {
+
+      a.logo,
+      .footer-links-box {
+        text-align: left;
+      }
+    }
+  }
 }

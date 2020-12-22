@@ -1,6 +1,7 @@
 header {
+  background-color: $primary_bg_color;
 
-  a.logo-header {
+  a.logo {
     display: block;
     padding: $padding_unit;
 
@@ -18,8 +19,8 @@ header {
 
         a {
           display: inline-block;
-          padding: $padding_unit / 2;
           color: $primary_color;
+          padding: $padding_unit / 2;
           @include transition_hover;
         }
 

@@ -388,11 +388,19 @@ template {
 body {
   font-family: "Teko", sans-serif;
   color: #444444;
+  font-weight: 300;
 }
 
 main,
 main section {
   width: 100%;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #0d2240;
+  font-weight: 600;
+  font-size: 26px;
 }
 
 ul {
@@ -413,12 +421,16 @@ a:hover {
 
 /* Breakpoint Extra Large 1200px xl */
 
-header a.logo-header {
+header {
+  background-color: #fff;
+}
+
+header a.logo {
   display: block;
   padding: 20px;
 }
 
-header a.logo-header img {
+header a.logo img {
   max-width: 250px;
 }
 
@@ -429,8 +441,8 @@ header nav ul.nav-menu li {
 
 header nav ul.nav-menu li a {
   display: inline-block;
-  padding: 10px;
   color: #444444;
+  padding: 10px;
   transition: all 0.25s ease-in-out;
 }
 
@@ -443,12 +455,90 @@ main section#home {
 }
 
 main section#products {
-  background-image: url("/img/products_bg.jpg");
+  background-image: url("/img/products-bg.jpg");
   background-position: center;
   background-size: cover;
 }
 
 main section#news {
   color: green;
+}
+
+footer {
+  background-color: #fff;
+  padding-top: 40px;
+}
+
+footer #footer-top {
+  padding-bottom: 40px;
+}
+
+footer #footer-top a.logo {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer #footer-top a.logo img {
+  max-width: 100%;
+}
+
+footer #footer-top .footer-links-box {
+  padding-bottom: 10px 0;
+  text-align: center;
+}
+
+footer #footer-top .footer-links-box ul {
+  padding-top: 10px;
+}
+
+footer #footer-top .footer-links-box ul li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+footer #footer-top .footer-links-box ul li a {
+  display: block;
+  color: #808080;
+  line-height: 18px;
+  padding-bottom: 10px;
+}
+
+footer #footer-top .footer-links-box ul.contacts-info {
+  padding-top: 0;
+}
+
+footer #footer-top .footer-links-box ul.contacts-info li {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #808080;
+  padding-bottom: 8px;
+}
+
+footer #footer-top .footer-links-box ul.contacts-info li span {
+  font-weight: 600;
+}
+
+footer #footer-bottom {
+  width: 100%;
+}
+
+footer #footer-bottom img {
+  max-width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* Breakpoint Medium 768px md */
+
+@media screen and (min-width: 768px) {
+  footer #footer-top a.logo,
+  footer #footer-top .footer-links-box {
+    text-align: left;
+  }
 }
 

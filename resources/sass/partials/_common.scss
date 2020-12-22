@@ -1,11 +1,19 @@
 body {
-  font-family: $font_family;  // 300;400;500;600;700
+  font-family: $primary_font;  // 300;400;500;600;700
   color: $primary_color;
+  font-weight: $font_weight;
 }
 
 main,
 main section {
   width: 100%;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: $titles_color;
+  font-weight: $weight_titles;
+  font-size: $font_size + 2;
 }
 
 ul {

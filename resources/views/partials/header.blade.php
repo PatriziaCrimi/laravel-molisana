@@ -1,14 +1,14 @@
 <header>
   <div class="container">
     <div class="row">
-      <div class="col">
-        <a class="logo-header text-center" href="{{url('/')}}">
+      <div class="col-12">
+        <a class="logo text-center" href="{{url('/')}}">
           <img src="{{asset('img/la-molisana-logo.png')}}" alt="La Molisana logo">
         </a>
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col-12">
         {{-- Navbar --}}
         <nav>
           <ul class="nav-menu text-center">

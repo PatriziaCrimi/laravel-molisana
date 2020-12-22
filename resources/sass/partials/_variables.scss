@@ -1,18 +1,26 @@
 // ---------------------------  Variables ----------------------------
 
 // Font
-$font_family: 'Teko', sans-serif; // 300;400;500;600;700
+$primary_font: 'Teko', sans-serif; // 300;400;500;600;700
+$secondary_font: 'Open Sans', sans-serif;  // 300;400;600;700;800
 $font_size: 24px;
+$font_weight: 300;
+$weight_titles: $font_weight * 2;
 
 // Colors
+$primary_bg_color: #fff;
 $primary_color: #444444;
+$secondary_color: #808080;
+$titles_color: #0d2240;
 $hover_color: #B3E5FC;
 
 // Dimensions
 $width_logo: 250px;
+$line_height: 18px;
 
 
 // Margins & Padding
+$margin_unit: 10px;
 $padding_unit: 20px;
 
 // Transition times
