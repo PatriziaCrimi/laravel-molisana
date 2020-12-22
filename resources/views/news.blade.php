@@ -5,7 +5,7 @@
 @endsection
 
 @section('section')
-  <section class="text-center">
+  <section id="news" class="text-center">
     <h1>News</h1>
   </section>
 @endsection
