@@ -146,3 +146,7 @@ Route::get('/', function () {
 Route::get('/products', function () {
     return view('products');
 })->name('products-page');
+
+Route::get('/news', function () {
+    return view('news');
+})->name('news-page');
