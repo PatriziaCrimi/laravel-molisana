@@ -413,11 +413,12 @@ a:hover {
 
 /* Breakpoint Extra Large 1200px xl */
 
-header .logo-header {
+header a.logo-header {
+  display: block;
   padding: 20px;
 }
 
-header .logo-header img {
+header a.logo-header img {
   max-width: 250px;
 }
 
@@ -441,11 +442,13 @@ main section#home {
   color: blue;
 }
 
-main section#news {
-  color: red;
+main section#products {
+  background-image: url("/img/products_bg.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-main section#products {
+main section#news {
   color: green;
 }
 

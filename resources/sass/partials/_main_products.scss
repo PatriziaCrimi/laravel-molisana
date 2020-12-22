@@ -1,5 +1,7 @@
 main {
-  section#news {
-  color: red;
+  section#products {
+  background-image: $products_bg;
+  background-position: center;
+  background-size: cover;
   }
 }

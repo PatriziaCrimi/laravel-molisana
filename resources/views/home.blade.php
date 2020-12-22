@@ -7,5 +7,6 @@
 @section('section')
   <section id="home" class="text-center">
     <h1>Home</h1>
+    <h2>La sezione finita è "Prodotti"</h2>
   </section>
 @endsection

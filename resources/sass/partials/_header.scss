@@ -1,6 +1,7 @@
 header {
 
-  .logo-header {
+  a.logo-header {
+    display: block;
     padding: $padding_unit;
 
     img {

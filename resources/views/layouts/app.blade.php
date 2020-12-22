@@ -14,49 +14,13 @@
   <body>
     <div id="page-wrapper">
       {{-- Header --}}
-      <header>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="logo-header text-center">
-                <img src="{{asset('img/la-molisana-logo.png')}}" alt="La Molisana logo">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              {{-- Navbar --}}
-              <nav>
-                <ul class="nav-menu text-center">
-                  <li>
-                    <a href="{{url('/')}}">Home</a>
-                  </li>
-                  <li>
-                    <a href="{{route('products-page')}}">Prodotti</a>
-                  </li>
-                  <li>
-                    <a href="{{route('news-page')}}">News</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>  {{-- Closing Header container --}}
-      </header>
+      @include('partials.header')
       {{-- Main --}}
       <main>
         @yield('section')
       </main>
       {{-- Footer --}}
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              prova footer
-            </div>
-          </div>
-        </div>
-      </footer>
+      @include('partials.footer')
     </div>  {{-- Closing page-wrapper --}}
   </body>
 </html>
