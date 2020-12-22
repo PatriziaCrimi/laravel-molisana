@@ -1,2 +1,31 @@
 header {
+
+  .logo-header {
+    padding: $padding_unit;
+
+    img {
+      max-width: $width_logo;
+    }
+  }
+
+  nav {
+    ul.nav-menu {
+
+      li {
+        display: inline-block;
+        font-size: $font_size;
+
+        a {
+          display: inline-block;
+          padding: $padding_unit / 2;
+          color: $primary_color;
+          @include transition_hover;
+        }
+
+        a:hover {
+          background-color: $hover_color;
+        }
+      }
+    }
+  }
 }

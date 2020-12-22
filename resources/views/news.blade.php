@@ -1,9 +1,11 @@
 @extends('layouts.app')
 
-@section('section')
-  <section class="text-center">
-    <h1>Prova News Main-Section</h1>
-  </section>
+@section('title')
+  <title>News dal mondo della pasta | La Molisana</title>
 @endsection
 
-{{-- <title>News dal mondo della pasta | La Molisana</title> --}}
+@section('section')
+  <section class="text-center">
+    <h1>News</h1>
+  </section>
+@endsection

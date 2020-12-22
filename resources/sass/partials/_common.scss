@@ -1,9 +1,14 @@
 body {
-
+  font-family: $font_family;  // 300;400;500;600;700
+  color: $primary_color;
 }
 
 ul {
   list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* ------------------- MEDIA QUERY ------------------- */

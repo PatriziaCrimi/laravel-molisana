@@ -385,8 +385,17 @@ template {
   display: none;
 }
 
+body {
+  font-family: "Teko", sans-serif;
+  color: #444444;
+}
+
 ul {
   list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* ------------------- MEDIA QUERY ------------------- */
@@ -398,4 +407,28 @@ ul {
 /* Breakpoint Large 992px lg */
 
 /* Breakpoint Extra Large 1200px xl */
+
+header .logo-header {
+  padding: 20px;
+}
+
+header .logo-header img {
+  max-width: 250px;
+}
+
+header nav ul.nav-menu li {
+  display: inline-block;
+  font-size: 24px;
+}
+
+header nav ul.nav-menu li a {
+  display: inline-block;
+  padding: 10px;
+  color: #444444;
+  transition: all 0.25s ease-in-out;
+}
+
+header nav ul.nav-menu li a:hover {
+  background-color: #B3E5FC;
+}
 

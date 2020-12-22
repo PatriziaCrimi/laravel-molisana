@@ -1,15 +1,19 @@
 // ---------------------------  Variables ----------------------------
 
 // Font
-
+$font_family: 'Teko', sans-serif; // 300;400;500;600;700
+$font_size: 24px;
 
 // Colors
-
+$primary_color: #444444;
+$hover_color: #B3E5FC;
 
 // Dimensions
+$width_logo: 250px;
 
 
 // Margins & Padding
-
+$padding_unit: 20px;
 
 // Transition times
+$hover_time: 0.25s;
