@@ -3,6 +3,7 @@
 // Font
 $primary_font: 'Teko', sans-serif; // 300;400;500;600;700
 $secondary_font: 'Open Sans', sans-serif;  // 300;400;600;700;800
+$font_awesome: 'Font Awesome 5 Free';
 $font_size: 24px;
 $font_weight: 300;
 $weight_titles: $font_weight * 2;
@@ -13,10 +14,13 @@ $primary_color: #444444;
 $secondary_color: #808080;
 $titles_color: #0d2240;
 $hover_color: #B3E5FC;
+$overlay_color: rgba(255, 255, 255, 0.6);
 
 // Dimensions
 $width_logo: 250px;
+$width_card: 250px;
 $line_height: 18px;
+$letter_spacing: 1px;
 
 
 // Margins & Padding

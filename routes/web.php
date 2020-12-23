@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+  return view('home');
+});
+
+Route::get('/products', function () {
   $pasta_list = [
     [
       "src" => "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-m.jpg",
@@ -140,13 +144,9 @@ Route::get('/', function () {
   $data = [
     'pasta_list' => $pasta_list
   ];
-    return view('home');
-});
-
-Route::get('/products', function () {
-    return view('products');
+  return view('products', $data);
 })->name('products');
 
 Route::get('/news', function () {
-    return view('news');
+  return view('news');
 })->name('news');

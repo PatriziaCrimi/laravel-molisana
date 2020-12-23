@@ -22,10 +22,10 @@ header {
           color: $primary_color;
           padding: $padding_unit / 2;
           @include transition_hover;
-        }
 
-        a:hover {
-          background-color: $hover_color;
+          &:hover {
+            background-color: $hover_color;
+          }
         }
       }
     }

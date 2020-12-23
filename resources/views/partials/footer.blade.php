@@ -84,15 +84,15 @@
             </ul>
           </div>
           <div class="footer-links-box">
-            <a href="#">
+            <a href="#" class="hover-links">
               <h3>Limited Edition</h3>
             </a>
           </div>
           <div class="footer-links-box">
-            <a href="#">
+            <a href="#" class="hover-links">
               <h3>News</h3>
             </a>
-            <ul>
+            <ul class="news">
               <li>
                 <a href="#">E-commerce</a>
               </li>
@@ -151,6 +151,30 @@
               <li>
                 <span>Fax:</span>
                 +39 0874 629584
+              </li>
+              <li>
+                Per segnalazioni scrivere a:
+                <a href="#" class="hover-links">
+                  <span>info@lamolisana.it</span>
+                </a>
+              </li>
+              <li>
+                Per contattare l'area commerciale:
+                <a href="#" class="hover-links">
+                  <span>commerciale@lamolisana.it</span>
+                </a>
+              </li>
+              <li>
+                Per contattare l'area export:
+                <a href="#" class="hover-links">
+                  <span>export@lamolisana.it</span>
+                </a>
+              </li>
+              <li>
+                Dati aziendali:
+                <a href="#" class="hover-links">
+                  <span>leggi di più</span>
+                </a>
               </li>
             </ul>
           </div>

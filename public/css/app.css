@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 * {
@@ -396,6 +398,13 @@ main section {
   width: 100%;
 }
 
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #0d2240;
+  font-size: 28.8px;
+}
+
 h3 {
   text-transform: uppercase;
   color: #0d2240;
@@ -456,8 +465,47 @@ main section#home {
 
 main section#products {
   background-image: url("/img/products-bg.jpg");
-  background-position: center;
-  background-size: cover;
+  background-size: contain;
+  padding: 40px 0;
+}
+
+main section#products .pasta-cards-wrapper {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+main section#products .pasta-cards-wrapper .pasta-card {
+  width: calc(100% / 3 - 10px);
+  position: relative;
+  margin: 5px;
+}
+
+main section#products .pasta-cards-wrapper .pasta-card img {
+  max-width: 100%;
+}
+
+main section#products .pasta-cards-wrapper .pasta-card .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.25s ease-in-out;
+}
+
+main section#products .pasta-cards-wrapper .pasta-card .overlay a {
+  color: #0d2240;
+  font-size: 24px;
+  font-weight: 450;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+main section#products .pasta-cards-wrapper .pasta-card:hover .overlay {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 main section#news {
@@ -478,6 +526,7 @@ footer #footer-top a.logo {
   display: block;
   text-align: center;
   margin-bottom: 20px;
+  padding-top: 10px;
 }
 
 footer #footer-top a.logo img {
@@ -485,7 +534,7 @@ footer #footer-top a.logo img {
 }
 
 footer #footer-top .footer-links-box {
-  padding-bottom: 10px 0;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -506,6 +555,27 @@ footer #footer-top .footer-links-box ul li a {
   padding-bottom: 10px;
 }
 
+footer #footer-top .footer-links-box ul li:last-of-type a {
+  padding-bottom: 0;
+}
+
+footer #footer-top .footer-links-box ul.news li {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+footer #footer-top .footer-links-box ul.news li a {
+  padding-bottom: 5px;
+}
+
+footer #footer-top .footer-links-box ul.news li a::before {
+  font-weight: bold;
+  font-family: "Font Awesome 5 Free";
+  content: "\F101";
+  font-size: 9.6px;
+  margin-right: 5px;
+}
+
 footer #footer-top .footer-links-box ul.contacts-info {
   padding-top: 0;
 }
@@ -518,7 +588,21 @@ footer #footer-top .footer-links-box ul.contacts-info li {
 }
 
 footer #footer-top .footer-links-box ul.contacts-info li span {
-  font-weight: 600;
+  font-weight: 660;
+}
+
+footer #footer-top .footer-links-box a.hover-links h3 {
+  color: #808080;
+}
+
+footer #footer-top .footer-links-box a.hover-links span {
+  text-decoration: underline;
+}
+
+footer #footer-top .footer-links-box a.hover-links h3:hover,
+footer #footer-top .footer-links-box a.hover-links span:hover {
+  color: #0d2240;
+  transition: all 0.25s ease-in-out;
 }
 
 footer #footer-bottom {

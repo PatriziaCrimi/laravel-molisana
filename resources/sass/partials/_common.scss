@@ -9,6 +9,13 @@ main section {
   width: 100%;
 }
 
+h2 {
+  text-transform: uppercase;
+  letter-spacing: $letter_spacing;
+  color: $titles_color;
+  font-size: $font_size * 1.2;
+}
+
 h3 {
   text-transform: uppercase;
   color: $titles_color;
