@@ -1,0 +1,25 @@
+main {
+
+  section#product-info {
+    color: coral;
+
+    .product-pic {
+      width: 100%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .product-package {
+      width: 100%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .product-details {
+    }
+  }
+}

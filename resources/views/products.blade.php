@@ -14,15 +14,16 @@
       <div class="row">
         <div class="col-12">
           <div class="pasta-cards-wrapper d-flex flex-wrap">
-            @foreach ($pasta_list as $pasta)
+            @foreach ($pasta_list as $key => $pasta)
               @if ($pasta['tipo'] === 'lunga')
                 <div class="pasta-card">
                   <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
+                  {{-- Overlay --}}
                   <div class="overlay">
-                    <a href="#" class="d-flex justify-content-center align-items-center">
+                    <a href="{{route('product-info', ['id' => $key])}}" class="d-flex justify-content-center align-items-center">
                       {{ $pasta['titolo'] }}
                     </a>
-                  </div>
+                  </div> {{-- Closing Overlay --}}
                 </div>
               @endif
             @endforeach
@@ -38,15 +39,16 @@
       <div class="row">
         <div class="col-12">
           <div class="pasta-cards-wrapper d-flex flex-wrap">
-            @foreach ($pasta_list as $pasta)
+            @foreach ($pasta_list as $key => $pasta)
               @if ($pasta['tipo'] === 'corta')
                 <div class="pasta-card">
                   <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
+                  {{-- Overlay --}}
                   <div class="overlay">
-                    <a href="#" class="d-flex justify-content-center align-items-center">
+                    <a href="{{route('product-info', ['id' => $key])}}" class="d-flex justify-content-center align-items-center">
                       {{ $pasta['titolo'] }}
                     </a>
-                  </div>
+                  </div> {{-- Closing Overlay --}}
                 </div>
               @endif
             @endforeach
@@ -62,15 +64,16 @@
       <div class="row">
         <div class="col-12">
           <div class="pasta-cards-wrapper d-flex flex-wrap">
-            @foreach ($pasta_list as $pasta)
+            @foreach ($pasta_list as $key => $pasta)
               @if ($pasta['tipo'] === 'cortissima')
                 <div class="pasta-card">
                   <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
+                  {{-- Overlay --}}
                   <div class="overlay">
-                    <a href="#" class="d-flex justify-content-center align-items-center">
+                    <a href="{{route('product-info', ['id' => $key])}}" class="d-flex justify-content-center align-items-center">
                       {{ $pasta['titolo'] }}
                     </a>
-                  </div>
+                  </div> {{-- Closing Overlay --}}
                 </div>
               @endif
             @endforeach
