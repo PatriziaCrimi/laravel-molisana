@@ -403,7 +403,7 @@ header nav ul.nav-menu li a {
   padding: 10px;
   transition: all 0.25s ease-in-out;
 }
-header nav ul.nav-menu li a:hover {
+header nav ul.nav-menu li a:hover, header nav ul.nav-menu li a.active {
   background-color: #B3E5FC;
 }
 

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
   return view('home');
-});
+})->name('homepage');
 
 Route::get('/products', function () {
   // Storing in a variable the pasta array contained in the file "pasta.php" in "config" folder

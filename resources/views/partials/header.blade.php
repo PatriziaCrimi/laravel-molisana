@@ -13,13 +13,13 @@
         <nav>
           <ul class="nav-menu text-center">
             <li>
-              <a href="{{url('/')}}">Home</a>
+              <a class="{{Request::route()->getName() === 'homepage' ? 'active' : ''}}" href="{{url('/')}}">Home</a>
             </li>
             <li>
-              <a href="{{route('products')}}">Prodotti</a>
+              <a class="{{Request::route()->getName() === 'products' ? 'active' : ''}}" href="{{route('products')}}">Prodotti</a>
             </li>
             <li>
-              <a href="{{route('news')}}">News</a>
+              <a class="{{Request::route()->getName() === 'news' ? 'active' : ''}}" href="{{route('news')}}">News</a>
             </li>
           </ul>
         </nav>

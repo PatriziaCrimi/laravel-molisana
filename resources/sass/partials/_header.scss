@@ -23,7 +23,8 @@ header {
           padding: $padding_unit / 2;
           @include transition_hover;
 
-          &:hover {
+          &:hover,
+          &.active {
             background-color: $hover_color;
           }
         }
