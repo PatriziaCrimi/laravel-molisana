@@ -16,7 +16,7 @@
       <img src="{{ $product['src-h'] }}" alt="{{ $product['titolo'] }}">
     </div>
     <div class="product-package">
-      <img src="{{ $product['src-p'] }}" alt="{{ $product['titolo'] . 'package'}} package">
+      <img src="{{ $product['src-p'] }}" alt="{{ $product['titolo']}} package">
     </div>
     {{-- Product Details --}}
     <div class="container">
@@ -56,5 +56,15 @@
         </div>
       </div>
     </div>  {{-- Closing Container-fluid --}}
+    <div class="slider left">
+      <a href="#">
+        <i class="fas fa-long-arrow-alt-left"></i>
+      </a>
+    </div>
+    <div class="slider right">
+      <a href="#">
+        <i class="fas fa-long-arrow-alt-right"></i>
+      </a>
+    </div>
   </section>
 @endsection

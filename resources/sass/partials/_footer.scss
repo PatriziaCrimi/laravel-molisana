@@ -97,10 +97,12 @@ footer {
 
   #footer-bottom {
     width: 100%;
+    height: $height_footer_bottom;
 
     img {
+      height: 100%;
       max-width: 100%;
-      object-fit: scale-down;
+      object-fit: cover;
       object-position: center;
     }
   }

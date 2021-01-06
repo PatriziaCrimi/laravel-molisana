@@ -20,9 +20,33 @@ Route::get('/', function () {
 Route::get('/products', function () {
   // Storing in a variable the pasta array contained in the file "pasta.php" in "config" folder
   $pasta_list = config('pasta');
-  // Associative array to use the variable $pasta_list in the ".blade.php" file
+  // Filtering array "pasta_list" to create 3 arrays for "long", "short", "very short" pasta
+
+  // OPTION 1 - COLLECTION --> WHERE
+  $collection_pasta = collect($pasta_list);
+  $long_pasta = $collection_pasta->where('tipo', 'lunga');
+  $short_pasta = $collection_pasta->where('tipo', 'corta');
+  $very_short_pasta = $collection_pasta->where('tipo', 'cortissima');
+  /*
+  // OPTION 2 - FILTER
+  $long_pasta = array_filter($pasta_list, function($item) {
+    return $item['tipo'] === 'lunga';
+  });
+  $short_pasta = array_filter($pasta_list, function($item) {
+    return $item['tipo'] === 'corta';
+  });
+  $very_short_pasta = array_filter($pasta_list, function($item) {
+    return $item['tipo'] === 'cortissima';
+  });
+  */
+
+  // Associative array to use the variables in the ".blade.php" file
   $data = [
-    'pasta_list' => $pasta_list,
+    'types_list' => [
+      'lunghe' => $long_pasta,
+      'corte' => $short_pasta,
+      'cortissime' => $very_short_pasta,
+    ]
   ];
   return view('products', $data);
 })->name('products');
@@ -34,7 +58,7 @@ Route::get('/product-info/{id}', function($id) {
   $product = $pasta_list[$id];
   // Associative array to use the variable $product in the ".blade.php" file
   $data = [
-    'product' => $product,
+    'product' => $product
   ];
   return view('product-info', $data);
 })->name('product-info');

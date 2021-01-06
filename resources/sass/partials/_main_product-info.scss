@@ -43,12 +43,45 @@ main {
         }
       }
     }
-  }
-  p.description {
-    font-family: $product_font;
-    font-size: $font_size / 1.2;
-    font-weight: $font_weight;
-    padding: $padding_unit * 3 $padding_unit;
+    p.description {
+      font-family: $product_font;
+      font-size: $font_size / 1.2;
+      font-weight: $font_weight;
+      padding: $padding_unit * 3 $padding_unit;
+    }
+
+    .slider {
+      position: fixed;
+      top: 50%;
+      height: $slider_dimensions;
+      width: $slider_dimensions / 2;
+      line-height: $slider_dimensions;
+      background-color: $slider_color;
+      text-align: center;
+      @include transition_hover;
+
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        color: $product_color;
+
+        i {
+          font-size: $font_size;
+        }
+      }
+
+      &:hover {
+        background-color: $slider_hover;
+      }
+    }
+
+    .slider.left {
+      left: 0;
+    }
+    .slider.right {
+      right: 0;
+    }
   }
 }
 
