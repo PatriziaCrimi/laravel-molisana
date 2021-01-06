@@ -26,11 +26,48 @@ main {
     }
 
     .product-details {
-      p:last-child {
-        font-family: $product_font;
-        font-size: $font_size / 1.2;
-        font-weight: $font_weight;
 
+      .info-box {
+        height: 100%;
+        width: 100%;
+        padding: $padding_unit $padding_unit * 3 0;
+        border-bottom: 2px solid $product_color;
+
+        p {
+          font-size: $font_size;
+          padding-top: $padding_unit / 2;
+
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  p.description {
+    font-family: $product_font;
+    font-size: $font_size / 1.2;
+    font-weight: $font_weight;
+    padding: $padding_unit * 3 $padding_unit;
+  }
+}
+
+/* ------------------- MEDIA QUERY ------------------- */
+
+/* Breakpoint Medium 768px md */
+@media screen and (min-width: 768px) {
+  main section#product-info {
+
+    .product-details {
+      border-bottom: 2px solid $product_color;
+
+      .info-box {
+        border-bottom: none;
+        border-right: 2px solid $product_color;
+
+        &.weight {
+          border-right: none;
+        }
       }
     }
   }

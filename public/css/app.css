@@ -470,12 +470,40 @@ main section#product-info .product-package {
 main section#product-info .product-package img {
   max-width: 100%;
 }
-main section#product-info .product-details p:last-child {
+main section#product-info .product-details .info-box {
+  height: 100%;
+  width: 100%;
+  padding: 20px 60px 0;
+  border-bottom: 2px solid #002d73;
+}
+main section#product-info .product-details .info-box p {
+  font-size: 24px;
+  padding-top: 10px;
+}
+main section#product-info .product-details .info-box p span {
+  font-weight: 600;
+}
+main p.description {
   font-family: "Playfair Display", serif;
   font-size: 20px;
   font-weight: 300;
+  padding: 60px 20px;
 }
 
+/* ------------------- MEDIA QUERY ------------------- */
+/* Breakpoint Medium 768px md */
+@media screen and (min-width: 768px) {
+  main section#product-info .product-details {
+    border-bottom: 2px solid #002d73;
+  }
+  main section#product-info .product-details .info-box {
+    border-bottom: none;
+    border-right: 2px solid #002d73;
+  }
+  main section#product-info .product-details .info-box.weight {
+    border-right: none;
+  }
+}
 main section#news {
   color: green;
 }
