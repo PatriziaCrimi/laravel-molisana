@@ -3,6 +3,7 @@
 // Font
 $primary_font: 'Teko', sans-serif; // 300;400;500;600;700
 $secondary_font: 'Open Sans', sans-serif;  // 300;400;600;700;800
+$product_font: 'Playfair Display', serif; // 400;500;600;700;800;900
 $font_awesome: 'Font Awesome 5 Free';
 $font_size: 24px;
 $font_weight: 300;
@@ -10,9 +11,11 @@ $weight_titles: $font_weight * 2;
 
 // Colors
 $primary_bg_color: #fff;
+$secondary_bg_color: #b7dbe7;
 $primary_color: #444444;
 $secondary_color: #808080;
 $titles_color: #0d2240;
+$product_color: #002d73;
 $hover_color: #B3E5FC;
 $overlay_color: rgba(255, 255, 255, 0.6);
 

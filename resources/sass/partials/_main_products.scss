@@ -10,12 +10,12 @@ main {
       padding-bottom: $padding_unit;
 
       .pasta-card {
-        width: calc(100% / 3 - 10px);  // 30px = ($margin_unit / 2) * 6
+        width: 100%;
         position: relative;
         margin: $margin_unit / 2;
 
         img {
-          max-width: 100%;
+          width: 100%;
         }
 
         .overlay {

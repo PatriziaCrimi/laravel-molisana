@@ -421,12 +421,12 @@ main section#products .pasta-cards-wrapper {
   padding-bottom: 20px;
 }
 main section#products .pasta-cards-wrapper .pasta-card {
-  width: calc(100% / 3 - 10px);
+  width: 100%;
   position: relative;
   margin: 5px;
 }
 main section#products .pasta-cards-wrapper .pasta-card img {
-  max-width: 100%;
+  width: 100%;
 }
 main section#products .pasta-cards-wrapper .pasta-card .overlay {
   display: none;
@@ -451,7 +451,12 @@ main section#products .pasta-cards-wrapper .pasta-card:hover .overlay {
 }
 
 main section#product-info {
-  color: coral;
+  color: #002d73;
+  background-color: #b7dbe7;
+}
+main section#product-info h1 {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
 }
 main section#product-info .product-pic {
   width: 100%;
@@ -465,6 +470,12 @@ main section#product-info .product-package {
 main section#product-info .product-package img {
   max-width: 100%;
 }
+main section#product-info .product-details p:last-child {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
 main section#news {
   color: green;
 }

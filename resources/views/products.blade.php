@@ -11,11 +11,11 @@
             <h2>Le lunghe</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="pasta-cards-wrapper d-flex flex-wrap">
-            @foreach ($pasta_list as $key => $pasta)
-              @if ($pasta['tipo'] === 'lunga')
+      <div class="pasta-cards-wrapper">
+        <div class="row">
+          @foreach ($pasta_list as $key => $pasta)
+            @if ($pasta['tipo'] === 'lunga')
+              <div class="col-12 col-sm-6 col-lg-4">
                 <div class="pasta-card">
                   <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
                   {{-- Overlay --}}
@@ -25,9 +25,9 @@
                     </a>
                   </div> {{-- Closing Overlay --}}
                 </div>
-              @endif
-            @endforeach
-          </div>
+              </div>
+            @endif
+          @endforeach
         </div>
       </div>
       {{-- Short pasta --}}
@@ -36,11 +36,11 @@
             <h2>Le corte</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="pasta-cards-wrapper d-flex flex-wrap">
-            @foreach ($pasta_list as $key => $pasta)
-              @if ($pasta['tipo'] === 'corta')
+      <div class="pasta-cards-wrapper">
+        <div class="row">
+          @foreach ($pasta_list as $key => $pasta)
+            @if ($pasta['tipo'] === 'corta')
+              <div class="col-12 col-sm-6 col-lg-4">
                 <div class="pasta-card">
                   <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
                   {{-- Overlay --}}
@@ -50,9 +50,9 @@
                     </a>
                   </div> {{-- Closing Overlay --}}
                 </div>
-              @endif
-            @endforeach
-          </div>
+              </div>
+            @endif
+          @endforeach
         </div>
       </div>
       {{-- Very short pasta --}}
@@ -61,11 +61,11 @@
             <h2>Le cortissime</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="pasta-cards-wrapper d-flex flex-wrap">
-            @foreach ($pasta_list as $key => $pasta)
-              @if ($pasta['tipo'] === 'cortissima')
+      <div class="pasta-cards-wrapper">
+        <div class="row">
+          @foreach ($pasta_list as $key => $pasta)
+            @if ($pasta['tipo'] === 'cortissima')
+              <div class="col-12 col-sm-6 col-lg-4">
                 <div class="pasta-card">
                   <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
                   {{-- Overlay --}}
@@ -75,9 +75,9 @@
                     </a>
                   </div> {{-- Closing Overlay --}}
                 </div>
-              @endif
-            @endforeach
-          </div>
+              </div>
+            @endif
+          @endforeach
         </div>
       </div>
     </div>   {{-- Closing Section-Products container --}}

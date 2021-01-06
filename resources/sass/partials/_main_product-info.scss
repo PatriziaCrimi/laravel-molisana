@@ -1,7 +1,13 @@
 main {
 
   section#product-info {
-    color: coral;
+    color: $product_color;
+    background-color: $secondary_bg_color;
+
+    h1 {
+      border-bottom: 1px solid #fff;
+      padding-bottom: $padding_unit;
+    }
 
     .product-pic {
       width: 100%;
@@ -20,6 +26,12 @@ main {
     }
 
     .product-details {
+      p:last-child {
+        font-family: $product_font;
+        font-size: $font_size / 1.2;
+        font-weight: $font_weight;
+
+      }
     }
   }
 }
