@@ -55,12 +55,14 @@ Route::get('/product-info/{id}', function($id) {
   // Storing in a variable the pasta array contained in the file "pasta.php" in "config" folder
   $pasta_list = config('pasta');
   // Checking that the $ID is a valid number
-  if(is_numeric($id) && $id > 0 && $id < count($pasta_list)) {
+  if(is_numeric($id) && $id >= 0 && $id < count($pasta_list)) {
     // Storing in a variable the specific type of pasta (product) that I need to print its details in the web page
     $product = $pasta_list[$id];
     // Associative array to use the variable $product in the ".blade.php" file
     $data = [
-      'product' => $product
+      'product' => $product,
+      'id' => $id,
+      'num_products' => count($pasta_list),
     ];
     return view('product-info', $data);
   } else {

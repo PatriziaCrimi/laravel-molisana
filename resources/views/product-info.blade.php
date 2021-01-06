@@ -57,14 +57,26 @@
       </div>
     </div>  {{-- Closing Container-fluid --}}
     <div class="slider left">
-      <a href="#">
-        <i class="fas fa-long-arrow-alt-left"></i>
-      </a>
+      @if ($id > 0)
+        <a href="{{route('product-info', ['id' => $id - 1])}}">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </a>
+      @else
+        <a href="{{route('product-info', ['id' => $num_products - 1])}}">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </a>
+      @endif
     </div>
     <div class="slider right">
-      <a href="#">
-        <i class="fas fa-long-arrow-alt-right"></i>
-      </a>
+      @if ($id < 11)
+        <a href="{{route('product-info', ['id' => $id + 1])}}">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </a>
+      @else
+        <a href="{{route('product-info', ['id' => 0])}}">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </a>
+      @endif
     </div>
   </section>
 @endsection
